@@ -6,3 +6,4 @@ engines:
 plugins:
   - dsh-plugin-panel-toggle
   - dsh-local-plugin-reload
+  - dsh-plugin-security-audit

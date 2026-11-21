@@ -8,3 +8,6 @@
     # dsh-local-plugin-reload
     - id: dsh-local-plugin-reload
       name: 'dsh-local-plugin-reload'
+    # dsh-plugin-security-audit
+    - id: dsh-plugin-security-audit
+      name: 'dsh-plugin-security-audit'

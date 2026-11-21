@@ -14,3 +14,6 @@ importers:
       dsh-plugin-panel-toggle:
         specifier: link:../dsh-plugin-panel-toggle
         version: link:../dsh-plugin-panel-toggle
+      dsh-plugin-security-audit:
+        specifier: link:../dsh-plugin-security-audit
+        version: link:../dsh-plugin-security-audit

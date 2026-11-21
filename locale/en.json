@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Plugin Modular Improvement Plan",
-    "description": "Plugin panel shortcut, local bundle browsing, and reload from source."
+    "description": "Plugin panel shortcut, local bundle management, and security audits before updates."
   }
 }

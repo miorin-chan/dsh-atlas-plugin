@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Plano de melhoria modular de plugins",
-    "description": "Atalho do painel, navegação por pacotes locais e reinstalação a partir da origem."
+    "description": "Atalho do painel, gestão de pacotes locais e auditorias de segurança antes de atualizações."
   }
 }

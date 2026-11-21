@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Plan d’amélioration modulaire des extensions",
-    "description": "Raccourci du panneau, navigation dans les extensions locales et réinstallation depuis la source."
+    "description": "Raccourci du panneau, gestion des extensions locales et audits de sécurité avant les mises à jour."
   }
 }

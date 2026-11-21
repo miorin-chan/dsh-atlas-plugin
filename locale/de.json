@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Modularer Verbesserungsplan für Plugins",
-    "description": "Tastenkürzel für das Plugin-Panel, Übersicht lokaler Bundles und Neuinstallation aus der Quelle."
+    "description": "Tastenkürzel für das Plugin-Panel, Verwaltung lokaler Bundles und Sicherheitsprüfung vor Updates."
   }
 }
