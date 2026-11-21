@@ -9,8 +9,9 @@ One card, one independently switchable row per enhancement.
 
 - [Plugins panel shortcut](../dsh-plugin-panel-toggle/README.md) opens Plugins with `Mod+Shift+,` and returns
   to the previous page on the next press.
-- [Local plugin reload](../dsh-local-plugin-reload/README.md) adds a Local tab
-  to browse installed bundles and reinstall them from source.
+- [Local plugin reload](../dsh-local-plugin-reload/README.md) adds a Local tab.
+  Open a bundle in **Plugins → Local**, click the pencil on its detail page,
+  and confirm **Destructive reload** to reinstall it from source.
   Use the standard plugin controls to manage Plugin Atlas itself.
 
 ## Install
