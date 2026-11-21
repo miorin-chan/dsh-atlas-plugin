@@ -1,0 +1,8 @@
+name: dsh-plugin-atlas
+version: 0.1.0
+private: true
+engines:
+  dsh: '>=0.2.2-rc.5'
+plugins:
+  - dsh-plugin-panel-toggle
+  - dsh-local-plugin-reload

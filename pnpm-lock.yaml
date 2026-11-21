@@ -1,0 +1,16 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      dsh-local-plugin-reload:
+        specifier: link:../dsh-local-plugin-reload
+        version: link:../dsh-local-plugin-reload
+      dsh-plugin-panel-toggle:
+        specifier: link:../dsh-plugin-panel-toggle
+        version: link:../dsh-plugin-panel-toggle

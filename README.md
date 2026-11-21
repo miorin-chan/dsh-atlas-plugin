@@ -1,0 +1,26 @@
+# dsh-plugin-atlas
+
+[简体中文](README.zh.md)
+
+**Plugin Modular Improvement Plan.**
+
+A modular program for differentiable, continuous improvement of the plugin management experience.
+One card, one independently switchable row per enhancement.
+
+- [Plugins panel shortcut](../dsh-plugin-panel-toggle/README.md) opens Plugins with `Mod+Shift+,` and returns
+  to the previous page on the next press.
+- [Local plugin reload](../dsh-local-plugin-reload/README.md) adds a Local tab
+  to browse installed bundles and reinstall them from source.
+  Use the standard plugin controls to manage Plugin Atlas itself.
+
+## Install
+
+Requires DeepSeek Harness 0.2.2-rc.5 or later with the Web client.
+
+1. Run `pnpm install` in this directory to resolve the linked source packages.
+2. If the target profile has either source bundle installed independently, record its switch state and remove it.
+   The source bundle and the aggregate share plugin row IDs.
+3. In **Plugins → Add plugin**, select this directory.
+   Check the two rows and restore their switch states.
+
+[Project documentation](docs/README.md)
