@@ -1,5 +1,20 @@
 # 项目文档
 
+## 使用
+
+- [打开插件页](../../dsh-plugin-panel-toggle/README.zh.md)。
+  按 `Mod+Shift+,` 打开，再按一次返回上一页。
+  macOS 的 `Mod` 是 Command，其他平台是 Ctrl。
+- [重装本地插件](../../dsh-local-plugin-reload/README.zh.md)。
+  在 **插件 → 本地** 打开目标详情，点铅笔，选择 **破坏性重装** 并确认。
+  本聚合包本身通过插件页的常规操作管理。
+- [审计插件更新](../../dsh-plugin-security-audit/README.zh.md)。
+  在有可用更新的已安装插件详情中，点 **审计更新**，在新对话中打开待发送的审计草稿。
+
+## 兼容条件
+
+需要 DeepSeek Harness `0.2.2-rc.5` 或更新版本的 Web 客户端。
+
 ## 安装
 
 1. 在聚合包目录运行 `pnpm install`。
@@ -28,6 +43,22 @@
 同日在一次性 profile 中安装三成员聚合包，以本地注册表提供 `1.0.0 → 2.0.0` 更新夹具。
 Chrome 中确认审计按钮在原生更新旁，点击后只有输入框显示版本审计提示词，会话记录没有对应消息。
 停用审计成员后，审计按钮消失，原生更新仍可用，其他两项保持启用。
+
+## Usage
+
+- [Open Plugins](../../dsh-plugin-panel-toggle/README.md) with `Mod+Shift+,`.
+  Press it again to return to the previous page.
+  `Mod` is Command on macOS and Ctrl elsewhere.
+- [Reinstall a local bundle](../../dsh-local-plugin-reload/README.md) from **Plugins → Local**.
+  Open its details, click the pencil, then choose **Destructive reload** and confirm.
+  Use the standard plugin controls to manage this aggregate itself.
+- [Audit an update](../../dsh-plugin-security-audit/README.md) from an installed plugin’s details
+  when an update is available.
+  **Audit update** opens an unsent draft in a new conversation.
+
+## Compatibility
+
+Requires the Web client on DeepSeek Harness `0.2.2-rc.5` or later.
 
 ## Install
 
