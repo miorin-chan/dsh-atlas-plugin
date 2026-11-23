@@ -8,12 +8,12 @@ importers:
 
   .:
     dependencies:
-      dsh-local-plugin-reload:
+      '@miorin/dsh-local-plugin-reload':
         specifier: link:../dsh-local-plugin-reload
         version: link:../dsh-local-plugin-reload
-      dsh-plugin-panel-toggle:
+      '@miorin/dsh-plugin-panel-toggle':
         specifier: link:../dsh-plugin-panel-toggle
         version: link:../dsh-plugin-panel-toggle
-      dsh-plugin-security-audit:
+      '@miorin/dsh-plugin-security-audit':
         specifier: link:../dsh-plugin-security-audit
         version: link:../dsh-plugin-security-audit

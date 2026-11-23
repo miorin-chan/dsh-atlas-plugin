@@ -2,12 +2,12 @@
 # Run `node tools/dsh-aggregate/cli.mjs generate <dir>` after editing the manifest.
 
 - insert:
-    # dsh-plugin-panel-toggle
+    # @miorin/dsh-plugin-panel-toggle
     - id: dsh-plugin-panel-toggle
-      name: 'dsh-plugin-panel-toggle'
-    # dsh-local-plugin-reload
+      name: '@miorin/dsh-plugin-panel-toggle'
+    # @miorin/dsh-local-plugin-reload
     - id: dsh-local-plugin-reload
-      name: 'dsh-local-plugin-reload'
-    # dsh-plugin-security-audit
+      name: '@miorin/dsh-local-plugin-reload'
+    # @miorin/dsh-plugin-security-audit
     - id: dsh-plugin-security-audit
-      name: 'dsh-plugin-security-audit'
+      name: '@miorin/dsh-plugin-security-audit'
