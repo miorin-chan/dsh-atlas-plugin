@@ -1,5 +1,11 @@
 # 项目文档
 
+## 安装
+
+1. 在聚合包目录运行 `pnpm install`。
+2. 如果目标 profile 已单独安装任何成员，记下开关状态，再移除独立安装的包，避免行 ID 重复。
+3. 在 **插件 → 添加插件** 选择聚合包目录，然后在新卡片恢复各成员的开关状态。
+
 [聚合清单](../aggregate.yml)声明卡内成员和顺序。生成器保留原行 ID 和配置。
 在包目录用 `pnpm run aggregate` 更新生成物，随后运行 `pnpm install` 与 `pnpm run check`。
 
@@ -22,3 +28,11 @@
 同日在一次性 profile 中安装三成员聚合包，以本地注册表提供 `1.0.0 → 2.0.0` 更新夹具。
 Chrome 中确认审计按钮在原生更新旁，点击后只有输入框显示版本审计提示词，会话记录没有对应消息。
 停用审计成员后，审计按钮消失，原生更新仍可用，其他两项保持启用。
+
+## Install
+
+1. Run `pnpm install` from the bundle directory.
+2. If any member is installed separately in the target profile, note its switch state and remove its bundle
+   to avoid duplicate row IDs.
+3. In **Plugins → Add plugin**, select the bundle directory.
+   Restore the saved switch states on the new card.
