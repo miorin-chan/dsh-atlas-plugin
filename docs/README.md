@@ -21,11 +21,23 @@
 2. 如果目标 profile 已单独安装任何成员，记下开关状态，再移除独立安装的包，避免行 ID 重复。
 3. 在 **插件 → 添加插件** 选择聚合包目录，然后在新卡片恢复各成员的开关状态。
 
-[聚合清单](../aggregate.yml)声明卡内成员和顺序。生成器保留原行 ID 和配置。
-在包目录用 `pnpm run aggregate` 更新生成物，随后运行 `pnpm install` 与 `pnpm run check`。
-
+[聚合清单](../aggregate.yml)声明卡内成员和顺序，生成器保留原行 ID 和配置。
 本地重装通过 bundle 的成员行识别承载自己的卡片。
 该卡片仍可浏览并可用常规开关管理，重装工具只处理其他本地 bundle。
+
+## 维护
+
+`pnpm install` 会安装清单中的固定版本并生成入库的 patch。
+`npm test` 重新生成并校验，`npm run check` 只检查漂移。
+手动生成用 `npm run build`，原有的 `pnpm run aggregate` 仍可用。新增或升级成员时，
+先更新[聚合清单](../aggregate.yml)，用 `pnpm add --save-exact --ignore-scripts <包名>@<版本>` 装齐新版本，
+再执行 `npm run build` 与 `pnpm install`，同步提交依赖清单、锁文件和 patch。
+
+联调本地成员时，先在各成员的检出目录构建，再用聚合包 `node_modules` 里的本地链接，成员版本须匹配固定版本。
+`npm pack --dry-run --json` 会重新生成 patch 并列出包内文件，可使用版本匹配的本地链接。
+发布从独立干净检出执行 `pnpm install --frozen-lockfile`，检查生成的改动并运行 `npm test`。
+发布检查要求成员来自该检出的注册表依赖树。
+包内生成器包含 YAML 解析器，可在独立检出中直接运行。
 
 ## 验证
 
