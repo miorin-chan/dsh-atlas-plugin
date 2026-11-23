@@ -27,8 +27,9 @@
 
 ## 维护
 
-`pnpm install` 会安装清单中的固定版本并生成入库的 patch。
-`npm test` 重新生成并校验，`npm run check` 只检查漂移。
+在 Node.js 22.18 或更新版本运行 `pnpm install`，
+安装固定版本并从 `scripts/aggregate/` 的 TypeScript 源码构建 `scripts/dsh-aggregate.mjs`，再更新入库的 patch。
+`npm test` 重新生成并校验，`npm run check` 只读检查生成器和聚合字段是否有漂移。
 手动生成用 `npm run build`，原有的 `pnpm run aggregate` 仍可用。新增或升级成员时，
 先更新[聚合清单](../aggregate.yml)，用 `pnpm add --save-exact --ignore-scripts <包名>@<版本>` 装齐新版本，
 再执行 `npm run build` 与 `pnpm install`，同步提交依赖清单、锁文件和 patch。
@@ -37,7 +38,8 @@
 `npm pack --dry-run --json` 会重新生成 patch 并列出包内文件，可使用版本匹配的本地链接。
 发布从独立干净检出执行 `pnpm install --frozen-lockfile`，检查生成的改动并运行 `npm test`。
 发布检查要求成员来自该检出的注册表依赖树。
-包内生成器包含 YAML 解析器，可在独立检出中直接运行。
+发布包中的 `scripts/dsh-aggregate.mjs` 包含 YAML 解析器。
+装好成员依赖后，可用 `node scripts/dsh-aggregate.mjs check .` 校验。
 
 ## 验证
 
