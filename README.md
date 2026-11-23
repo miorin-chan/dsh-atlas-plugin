@@ -1,29 +1,28 @@
-# dsh-atlas-plugin
+# Plugin Modular Improvement Plan
 
 [简体中文](README.zh.md)
 
-**Plugin Modular Improvement Plan.**
+Open Plugins with a shortcut, reinstall local bundles, and draft audits for updates.
+Each feature has its own switch.
 
-A modular program for differentiable, continuous improvement of the plugin management experience.
-One card, one independently switchable row per enhancement.
-
-- [Plugins panel shortcut](../dsh-plugin-panel-toggle/README.md) opens Plugins with `Mod+Shift+,` and returns
-  to the previous page on the next press.
-- [Local plugin reload](../dsh-local-plugin-reload/README.md) adds a Local tab.
-  Open a bundle in **Plugins → Local**, click the pencil on its detail page,
-  and confirm **Destructive reload** to reinstall it from source.
-  Use the standard plugin controls to manage Plugin Atlas itself.
-- [Plugin security audit](../dsh-plugin-security-audit/README.md) opens an unsent audit draft
-  from an installed plugin's update actions.
+- [Open Plugins](../dsh-plugin-panel-toggle/README.md) with `Mod+Shift+,`.
+  Press it again to return to the previous page.
+  `Mod` is Command on macOS and Ctrl elsewhere.
+- [Reinstall a local bundle](../dsh-local-plugin-reload/README.md) from **Plugins → Local**.
+  Open its details, click the pencil, then choose **Destructive reload** and confirm.
+  Use the standard plugin controls to manage this aggregate itself.
+- [Audit an update](../dsh-plugin-security-audit/README.md) from an installed plugin’s details
+  when an update is available.
+  **Audit update** opens an unsent draft in a new conversation.
 
 ## Install
 
-Requires DeepSeek Harness 0.2.2-rc.5 or later with the Web client.
+Requires the Web client on DeepSeek Harness `0.2.2-rc.5` or later.
 
-1. Run `pnpm install` in this directory to resolve the linked source packages.
-2. If the target profile has any source bundles installed independently, record their switch states and remove them.
-   Each source bundle shares its plugin row ID with the aggregate.
+1. Run `pnpm install` in this directory.
+2. If any included plugin is installed separately in this profile, note its switch state
+   and remove its bundle to avoid duplicate plugin IDs.
 3. In **Plugins → Add plugin**, select this directory.
-   Check the three rows and restore their switch states.
+   Restore any saved switch states on the new card.
 
-[Project documentation](docs/README.md)
+[Maintenance and verification](docs/README.md)
