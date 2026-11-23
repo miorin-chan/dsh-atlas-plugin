@@ -1,4 +1,4 @@
-# dsh-plugin-atlas
+# dsh-atlas-plugin
 
 [English](README.md)
 
