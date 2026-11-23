@@ -1,7 +1,6 @@
 {
   "name": "@miorin/dsh-atlas-plugin",
   "version": "0.1.0",
-  "private": true,
   "license": "MIT",
   "type": "module",
   "description": "A modular program for differentiable, continuous improvement of the plugin management experience.",
@@ -54,8 +53,11 @@
     }
   },
   "dependencies": {
-    "@miorin/dsh-plugin-panel-toggle": "link:../dsh-plugin-panel-toggle",
-    "@miorin/dsh-local-plugin-reload": "link:../dsh-local-plugin-reload",
-    "@miorin/dsh-plugin-security-audit": "link:../dsh-plugin-security-audit"
+    "@miorin/dsh-plugin-panel-toggle": "0.1.0",
+    "@miorin/dsh-local-plugin-reload": "0.1.0",
+    "@miorin/dsh-plugin-security-audit": "0.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -1,12 +1,11 @@
 name: '@miorin/dsh-atlas-plugin'
 version: 0.1.0
-private: true
 engines:
   dsh: '>=0.2.2-rc.5'
 plugins:
   - name: '@miorin/dsh-plugin-panel-toggle'
-    spec: link:../dsh-plugin-panel-toggle
+    spec: 0.1.0
   - name: '@miorin/dsh-local-plugin-reload'
-    spec: link:../dsh-local-plugin-reload
+    spec: 0.1.0
   - name: '@miorin/dsh-plugin-security-audit'
-    spec: link:../dsh-plugin-security-audit
+    spec: 0.1.0

@@ -9,11 +9,33 @@ importers:
   .:
     dependencies:
       '@miorin/dsh-local-plugin-reload':
-        specifier: link:../dsh-local-plugin-reload
-        version: link:../dsh-local-plugin-reload
+        specifier: 0.1.0
+        version: 0.1.0
       '@miorin/dsh-plugin-panel-toggle':
-        specifier: link:../dsh-plugin-panel-toggle
-        version: link:../dsh-plugin-panel-toggle
+        specifier: 0.1.0
+        version: 0.1.0
       '@miorin/dsh-plugin-security-audit':
-        specifier: link:../dsh-plugin-security-audit
-        version: link:../dsh-plugin-security-audit
+        specifier: 0.1.0
+        version: 0.1.0
+
+packages:
+
+  '@miorin/dsh-local-plugin-reload@0.1.0':
+    resolution: {integrity: sha512-xkHlVdiIg26siRHy1FF3aSfOLcv1dBnrdEmwfQTFyQ5HxAfLLMOxjJBObRsNois5I5QMVgS9ZjjWkJBCALI+Ug==}
+    engines: {dsh: '>=0.2.2-rc.5'}
+
+  '@miorin/dsh-plugin-panel-toggle@0.1.0':
+    resolution: {integrity: sha512-SVoKQIUHLGPUXt9dSFZ6irVaDpFDkkun3qTmT2pKGXfIU7+3ByL/2Rgl9NGYpWxq0eBBweop6GmDDN701uculA==}
+    engines: {dsh: '>=0.2.2-rc.3'}
+
+  '@miorin/dsh-plugin-security-audit@0.1.0':
+    resolution: {integrity: sha512-YjhgY0vO7eoh+KGbb1upfz3I2OWFiFpYo2WAhvpTLqUDpIrpKMWYrkX2PqYUFe7cy9wyRY++k1m7Ds8g/YKIhQ==}
+    engines: {dsh: '>=0.2.2-rc.5'}
+
+snapshots:
+
+  '@miorin/dsh-local-plugin-reload@0.1.0': {}
+
+  '@miorin/dsh-plugin-panel-toggle@0.1.0': {}
+
+  '@miorin/dsh-plugin-security-audit@0.1.0': {}
