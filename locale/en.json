@@ -1,6 +1,7 @@
 {
   "meta": {
     "title": "Plugin Modular Improvement Plan",
-    "description": "Plugin panel shortcut, local bundle management, and security audits before updates."
+    "description": "Plugin panel shortcut, local bundle management, and security audits before updates.",
+    "detail": "README.md"
   }
 }

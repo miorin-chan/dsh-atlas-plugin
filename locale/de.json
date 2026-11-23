@@ -1,6 +1,7 @@
 {
   "meta": {
     "title": "Modularer Verbesserungsplan für Plugins",
-    "description": "Tastenkürzel für das Plugin-Panel, Verwaltung lokaler Bundles und Sicherheitsprüfung vor Updates."
+    "description": "Tastenkürzel für das Plugin-Panel, Verwaltung lokaler Bundles und Sicherheitsprüfung vor Updates.",
+    "detail": "README.de.md"
   }
 }

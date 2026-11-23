@@ -1,6 +1,7 @@
 {
   "meta": {
     "title": "Plano de melhoria modular de plugins",
-    "description": "Atalho do painel, gestão de pacotes locais e auditorias de segurança antes de atualizações."
+    "description": "Atalho do painel, gestão de pacotes locais e auditorias de segurança antes de atualizações.",
+    "detail": "README.pt.md"
   }
 }
