@@ -53,14 +53,16 @@
       "plugins": [
         "@miorin/dsh-plugin-panel-toggle",
         "@miorin/dsh-local-plugin-reload",
-        "@miorin/dsh-plugin-security-audit"
+        "@miorin/dsh-plugin-security-audit",
+        "@miorin/dsh-aggregate-local-link"
       ]
     }
   },
   "dependencies": {
     "@miorin/dsh-plugin-panel-toggle": "0.1.0",
     "@miorin/dsh-local-plugin-reload": "0.1.0",
-    "@miorin/dsh-plugin-security-audit": "0.1.0"
+    "@miorin/dsh-plugin-security-audit": "0.1.0",
+    "@miorin/dsh-aggregate-local-link": "link:../dsh-aggregate-local-link"
   },
   "devDependencies": {
     "esbuild": "0.28.2",

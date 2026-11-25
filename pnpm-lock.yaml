@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@miorin/dsh-aggregate-local-link':
+        specifier: link:../dsh-aggregate-local-link
+        version: link:../dsh-aggregate-local-link
       '@miorin/dsh-local-plugin-reload':
         specifier: 0.1.0
         version: 0.1.0

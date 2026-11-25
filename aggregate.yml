@@ -9,3 +9,5 @@ plugins:
     spec: 0.1.0
   - name: '@miorin/dsh-plugin-security-audit'
     spec: 0.1.0
+  - name: '@miorin/dsh-aggregate-local-link'
+    spec: link:../dsh-aggregate-local-link
