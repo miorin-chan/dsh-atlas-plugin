@@ -11,6 +11,6 @@
     # @miorin/dsh-plugin-security-audit
     - id: dsh-plugin-security-audit
       name: '@miorin/dsh-plugin-security-audit'
-    # @miorin/dsh-aggregate-local-link
-    - id: dsh-aggregate-local-link
-      name: '@miorin/dsh-aggregate-local-link'
+    # @miorin/dsh-atlas-plugin (aggregate runtime)
+    - id: dsh-atlas-plugin
+      name: "@miorin/dsh-atlas-plugin"
