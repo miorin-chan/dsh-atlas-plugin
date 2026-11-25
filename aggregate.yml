@@ -5,7 +5,10 @@ engines:
 plugins:
   - name: '@miorin/dsh-plugin-panel-toggle'
     spec: 0.1.0
+    enabled: true
   - name: '@miorin/dsh-local-plugin-reload'
     spec: 0.1.0
+    enabled: true
   - name: '@miorin/dsh-plugin-security-audit'
     spec: 0.1.0
+    enabled: true
