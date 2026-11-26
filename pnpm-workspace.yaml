@@ -1,3 +1,7 @@
 # esbuild uses the platform binary from its optional dependencies.
 allowBuilds:
   "esbuild@0.28.2": false
+minimumReleaseAgeExclude:
+  - '@miorin/dsh-local-plugin-reload@0.1.1'
+  - '@miorin/dsh-plugin-panel-toggle@0.1.1'
+  - '@miorin/dsh-plugin-security-audit@0.1.1'
