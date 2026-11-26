@@ -1,7 +1,11 @@
 name: '@miorin/dsh-atlas-plugin'
 version: 0.2.0
+private: false
+description: 'Plugin panel shortcut, local bundle management, and security audits before updates.'
+license: MIT
 engines:
   dsh: '>=0.2.2-rc.5'
+  node: '^22.18.0 || >=24.11.0'
 plugins:
   - name: '@miorin/dsh-plugin-panel-toggle'
     spec: 0.1.1
