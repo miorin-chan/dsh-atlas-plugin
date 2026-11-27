@@ -1,5 +1,8 @@
 # 项目文档
 
+- [产品设计](../DESIGN.md)：主题定位、成员收口边界与成功标准。
+- [中文使用说明](../README.zh.md) · [English README](../README.md)
+
 ## 使用
 
 - [打开插件页](../../dsh-plugin-panel-toggle/README.zh.md)。
