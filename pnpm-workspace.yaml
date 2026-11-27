@@ -5,3 +5,4 @@ minimumReleaseAgeExclude:
   - '@miorin/dsh-local-plugin-reload@0.1.1'
   - '@miorin/dsh-plugin-panel-toggle@0.1.1'
   - '@miorin/dsh-plugin-security-audit@0.1.1'
+  - '@miorin/dsh-aggregate@0.1.0'
