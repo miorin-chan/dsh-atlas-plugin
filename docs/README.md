@@ -14,7 +14,7 @@
 - [审计插件更新](../../dsh-plugin-security-audit/README.zh.md)。
   在有可用更新的已安装插件详情中，点 **审计更新**，在新对话中打开待发送的审计草稿。
 
-本地仓库链接与包源码切换能力已统一迁至 [模块化改良计划本地开发](../../dsh-atlas-dev/README.zh.md)
+本地仓库链接与包源码切换能力已统一迁至 [开发模块化改良计划](../../dsh-atlas-dev/README.zh.md)
 （`@miorin/dsh-atlas-dev`）。
 
 ## 兼容条件
@@ -81,7 +81,7 @@ Chrome 中确认审计按钮在原生更新旁，点击后只有输入框显示�
   **Audit update** opens an unsent draft in a new conversation.
 
 Local repository links and package source switching now live
-in [Atlas Local Dev](../../dsh-atlas-dev/README.md) (`@miorin/dsh-atlas-dev`).
+in [Development Modular Improvement Plan](../../dsh-atlas-dev/README.md) (`@miorin/dsh-atlas-dev`).
 
 ## Compatibility
 
