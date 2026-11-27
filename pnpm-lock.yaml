@@ -11,6 +11,9 @@ importers:
       '@miorin/dsh-local-plugin-reload':
         specifier: 0.1.1
         version: 0.1.1
+      '@miorin/dsh-plugin-entry':
+        specifier: link:../dsh-plugin-entry
+        version: link:../dsh-plugin-entry
       '@miorin/dsh-plugin-panel-toggle':
         specifier: 0.1.1
         version: 0.1.1

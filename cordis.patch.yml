@@ -5,6 +5,9 @@
     # @miorin/dsh-plugin-panel-toggle
     - id: dsh-plugin-panel-toggle
       name: '@miorin/dsh-plugin-panel-toggle'
+    # @miorin/dsh-plugin-entry
+    - id: dsh-plugin-entry
+      name: '@miorin/dsh-plugin-entry'
     # @miorin/dsh-local-plugin-reload
     - id: dsh-local-plugin-reload
       name: '@miorin/dsh-local-plugin-reload'

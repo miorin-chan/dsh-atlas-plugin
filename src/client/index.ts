@@ -5,11 +5,13 @@ const runtime = createAggregateClient({
   bundleName: "@miorin/dsh-atlas-plugin",
   members: [
     "@miorin/dsh-plugin-panel-toggle",
+    "@miorin/dsh-plugin-entry",
     "@miorin/dsh-local-plugin-reload",
     "@miorin/dsh-plugin-security-audit",
   ],
   defaults: {
     "@miorin/dsh-plugin-panel-toggle": true,
+    "@miorin/dsh-plugin-entry": true,
     "@miorin/dsh-local-plugin-reload": true,
     "@miorin/dsh-plugin-security-audit": true,
   },

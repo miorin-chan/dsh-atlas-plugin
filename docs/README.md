@@ -5,6 +5,9 @@
 - [打开插件页](../../dsh-plugin-panel-toggle/README.zh.md)。
   按 `Mod+Shift+,` 打开，再按一次返回上一页。
   macOS 的 `Mod` 是 Command，其他平台是 Ctrl。
+- [选择默认页签](../../dsh-plugin-entry/README.zh.md)。
+  在聚合卡详情展开 **插件页入口管理**，选择 **默认页签**。
+  下次从侧栏打开插件页时生效。
 - [重装本地插件](../../dsh-local-plugin-reload/README.zh.md)。
   在 **插件 → 本地** 打开目标详情，点铅笔，选择 **破坏性重装** 并确认。
   本聚合包本身通过插件页的常规操作管理。
@@ -32,10 +35,12 @@
 
 在默认工作区运行 `npm run build`（调用 `tools/dsh-aggregate`）更新 `package.json` 依赖与 `dsh.aggregate` v1 契约、
 `cordis.patch.yml` 以及独立运行时入口 `index.js`、`client.js`。
-`npm test` 重新生成并校验，`npm run check` 只读检查生成物是否有漂移。
-新增或升级注册表成员时，先更新[聚合清单](../aggregate.yml)，
-用 `pnpm add --save-exact --ignore-scripts <包名>@<版本>` 装齐新版本，再执行 `npm run build` 与 `pnpm install`，
-同步提交依赖清单、锁文件和 patch。
+`npm test` 重新生成并校验，`npm run check` 只读检查生成物是否有漂移。新增或升级注册表成员时，
+先更新[聚合清单](../aggregate.yml)，用 `pnpm add --save-exact --ignore-scripts <包名>@<版本>` 装齐新版本，
+再执行 `npm run build` 与 `pnpm install`，同步提交依赖清单、锁文件和 patch。
+「插件页入口管理」尚未发布，当前用 `link:` 引用相邻的本地源码仓库。
+本地安装前先在成员目录运行 `pnpm install` 构建产物。
+发布聚合包前须先发布成员，再把链接钉为已发布版本。
 
 ## 验证
 
@@ -55,11 +60,18 @@
 Chrome 中确认审计按钮在原生更新旁，点击后只有输入框显示版本审计提示词，会话记录没有对应消息。
 停用审计成员后，审计按钮消失，原生更新仍可用，其他两项保持启用。
 
+2026-11-26 用临时 Web profile 只安装聚合包，确认可以展开「插件页入口管理」、
+将默认页签设为 `Local`，并从侧栏重新进入该页签。
+浏览器控制台无错误。
+
 ## Usage
 
 - [Open Plugins](../../dsh-plugin-panel-toggle/README.md) with `Mod+Shift+,`.
   Press it again to return to the previous page.
   `Mod` is Command on macOS and Ctrl elsewhere.
+- [Choose a default tab](../../dsh-plugin-entry/README.md).
+  Expand **Plugins landing page** in this bundle's details, then choose **Default tab**.
+  It applies the next time you open Plugins from the sidebar.
 - [Reinstall a local bundle](../../dsh-local-plugin-reload/README.md) from **Plugins → Local**.
   Open its details, click the pencil, then choose **Destructive reload** and confirm.
   Use the standard plugin controls to manage this aggregate itself.
