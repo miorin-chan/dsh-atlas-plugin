@@ -2,6 +2,6 @@
   "meta": {
     "title": "Plan de mejora modular de plugins",
     "description": "Atajo del panel, gestión de paquetes locales y auditorías de seguridad antes de actualizar.",
-    "detail": "README.es.md"
+    "detail": "docs/DETAIL.es.md"
   }
 }

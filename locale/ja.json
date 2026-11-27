@@ -2,6 +2,6 @@
   "meta": {
     "title": "プラグインのモジュール型改善計画",
     "description": "パネル切り替えのショートカット、ローカルバンドルの管理、更新前のセキュリティ監査。",
-    "detail": "README.ja.md"
+    "detail": "docs/DETAIL.ja.md"
   }
 }

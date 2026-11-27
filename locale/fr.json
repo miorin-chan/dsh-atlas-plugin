@@ -2,6 +2,6 @@
   "meta": {
     "title": "Plan d’amélioration modulaire des extensions",
     "description": "Raccourci du panneau, gestion des extensions locales et audits de sécurité avant les mises à jour.",
-    "detail": "README.fr.md"
+    "detail": "docs/DETAIL.fr.md"
   }
 }
